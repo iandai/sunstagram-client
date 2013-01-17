@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OverlayViewController.h"
 
-@interface ImageViewController : UIViewController
+
+@interface ImageViewController : UIViewController <UIImagePickerControllerDelegate, OverlayViewControllerDelegate>
+
 
 @end
