@@ -19,6 +19,8 @@
 		691450C21679B1A100E2FE23 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 691450C01679B1A100E2FE23 /* MainStoryboard.storyboard */; };
 		691450C51679B1A100E2FE23 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691450C41679B1A100E2FE23 /* ImageViewController.m */; };
 		691450D01679BCF900E2FE23 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691450CF1679BCF900E2FE23 /* MobileCoreServices.framework */; };
+		695221C816A92D49008F1CBF /* rsz_2avatar_ian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 695221C716A92D49008F1CBF /* rsz_2avatar_ian.jpg */; };
+		695221CB16A94D98008F1CBF /* ClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 695221CA16A94D98008F1CBF /* ClipView.m */; };
 		6955E166168C0B8D00E28A0D /* GlobalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6955E165168C0B8D00E28A0D /* GlobalData.m */; };
 		6959EF3716A4FD0E00BD07C9 /* avata_zhangning.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6959EF3616A4FD0E00BD07C9 /* avata_zhangning.jpg */; };
 		6959EF3F16A506E200BD07C9 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6959EF3916A506E200BD07C9 /* image1.jpg */; };
@@ -46,8 +48,6 @@
 		6959EF6816A5220E00BD07C9 /* btn_comment_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 6959EF6616A5220E00BD07C9 /* btn_comment_disabled.png */; };
 		6959EF6916A5220E00BD07C9 /* btn_comment_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 6959EF6716A5220E00BD07C9 /* btn_comment_selected.png */; };
 		6959EF6B16A5371A00BD07C9 /* header_user_name.png in Resources */ = {isa = PBXBuildFile; fileRef = 6959EF6A16A5371A00BD07C9 /* header_user_name.png */; };
-		6959EF6D16A542C000BD07C9 /* app_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6959EF6C16A542C000BD07C9 /* app_icon.png */; };
-		6959EF7616A55D7600BD07C9 /* rsz_2avatar_ian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6959EF7516A55D7600BD07C9 /* rsz_2avatar_ian.jpg */; };
 		6959EF7A16A58F2100BD07C9 /* FollowersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6959EF7916A58F2000BD07C9 /* FollowersViewController.m */; };
 		695D0FC316816BDA004373E9 /* PhotocaptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 695D0FC216816BD9004373E9 /* PhotocaptionViewController.m */; };
 		695D0FCD1681B98D004373E9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 695D0FCC1681B98D004373E9 /* HomeViewController.m */; };
@@ -85,6 +85,7 @@
 		699C4A61169FE16900DA9A99 /* btn_header_update_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 699C4A60169FE16900DA9A99 /* btn_header_update_normal.png */; };
 		69A2D530169A7B1C00DB3DD2 /* 08-chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A2D52F169A7B1C00DB3DD2 /* 08-chat.png */; };
 		69D5B30F169C1F8400FBFD61 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D5B30E169C1F8400FBFD61 /* ProfileViewController.m */; };
+		69E6E1EA16A8E91D00FA816E /* camera-ios-icon-multi拷貝.png in Resources */ = {isa = PBXBuildFile; fileRef = 69E6E1E916A8E91D00FA816E /* camera-ios-icon-multi拷貝.png */; };
 		9ADB32DCBF0340F9ADADC22C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5775D8AC4EEC474BB84E8259 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +109,9 @@
 		691450C31679B1A100E2FE23 /* ImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		691450C41679B1A100E2FE23 /* ImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		691450CF1679BCF900E2FE23 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		695221C716A92D49008F1CBF /* rsz_2avatar_ian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rsz_2avatar_ian.jpg; path = ../../../Desktop/Images/rsz_2avatar_ian.jpg; sourceTree = "<group>"; };
+		695221C916A94D98008F1CBF /* ClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClipView.h; sourceTree = "<group>"; };
+		695221CA16A94D98008F1CBF /* ClipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClipView.m; sourceTree = "<group>"; };
 		6955E164168C0B8D00E28A0D /* GlobalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalData.h; sourceTree = "<group>"; };
 		6955E165168C0B8D00E28A0D /* GlobalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalData.m; sourceTree = "<group>"; };
 		6959EF3616A4FD0E00BD07C9 /* avata_zhangning.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avata_zhangning.jpg; sourceTree = "<group>"; };
@@ -137,7 +141,6 @@
 		6959EF6716A5220E00BD07C9 /* btn_comment_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_comment_selected.png; sourceTree = "<group>"; };
 		6959EF6A16A5371A00BD07C9 /* header_user_name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_user_name.png; sourceTree = "<group>"; };
 		6959EF6C16A542C000BD07C9 /* app_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon.png; sourceTree = "<group>"; };
-		6959EF7516A55D7600BD07C9 /* rsz_2avatar_ian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rsz_2avatar_ian.jpg; path = ../../../Desktop/Images/rsz_2avatar_ian.jpg; sourceTree = "<group>"; };
 		6959EF7816A58F1F00BD07C9 /* FollowersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowersViewController.h; sourceTree = "<group>"; };
 		6959EF7916A58F2000BD07C9 /* FollowersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowersViewController.m; sourceTree = "<group>"; };
 		695D0FC116816BD9004373E9 /* PhotocaptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotocaptionViewController.h; sourceTree = "<group>"; };
@@ -189,6 +192,7 @@
 		69A2D52F169A7B1C00DB3DD2 /* 08-chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "08-chat.png"; sourceTree = "<group>"; };
 		69D5B30D169C1F8400FBFD61 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		69D5B30E169C1F8400FBFD61 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		69E6E1E916A8E91D00FA816E /* camera-ios-icon-multi拷貝.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-ios-icon-multi拷貝.png"; sourceTree = "<group>"; };
 		D9135AE0C468405B80FCC3D3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -211,6 +215,7 @@
 		691450991679B1A100E2FE23 = {
 			isa = PBXGroup;
 			children = (
+				69E6E1E916A8E91D00FA816E /* camera-ios-icon-multi拷貝.png */,
 				6959EF6C16A542C000BD07C9 /* app_icon.png */,
 				691450CF1679BCF900E2FE23 /* MobileCoreServices.framework */,
 				691450AE1679B1A100E2FE23 /* Image */,
@@ -247,6 +252,8 @@
 				690D1D7A167F10D2009FFE42 /* LoginViewController.m */,
 				695D0FCB1681B98D004373E9 /* HomeViewController.h */,
 				695D0FCC1681B98D004373E9 /* HomeViewController.m */,
+				695221C916A94D98008F1CBF /* ClipView.h */,
+				695221CA16A94D98008F1CBF /* ClipView.m */,
 				696E63C7169D6D270096CDE8 /* PostCommentsViewController.h */,
 				696E63C8169D6D270096CDE8 /* PostCommentsViewController.m */,
 				697BDD94169BA66B002B446E /* UserListViewController.h */,
@@ -292,7 +299,7 @@
 				6959EF4916A51A7600BD07C9 /* icons_list */,
 				6959EF3816A506E200BD07C9 /* example image */,
 				6959EF3616A4FD0E00BD07C9 /* avata_zhangning.jpg */,
-				6959EF7516A55D7600BD07C9 /* rsz_2avatar_ian.jpg */,
+				695221C716A92D49008F1CBF /* rsz_2avatar_ian.jpg */,
 				696DCEC016A281C100162505 /* btn_header_prev_normal.png */,
 				699C4A60169FE16900DA9A99 /* btn_header_update_normal.png */,
 				699C4A5D169FDD2100DA9A99 /* wall-header_title.png */,
@@ -469,8 +476,8 @@
 				6959EF6816A5220E00BD07C9 /* btn_comment_disabled.png in Resources */,
 				6959EF6916A5220E00BD07C9 /* btn_comment_selected.png in Resources */,
 				6959EF6B16A5371A00BD07C9 /* header_user_name.png in Resources */,
-				6959EF6D16A542C000BD07C9 /* app_icon.png in Resources */,
-				6959EF7616A55D7600BD07C9 /* rsz_2avatar_ian.jpg in Resources */,
+				69E6E1EA16A8E91D00FA816E /* camera-ios-icon-multi拷貝.png in Resources */,
+				695221C816A92D49008F1CBF /* rsz_2avatar_ian.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +524,7 @@
 				697194C0169E90A500F59AC6 /* CommnetCell.m in Sources */,
 				6976338716A160C8007FD9E9 /* newsViewController.m in Sources */,
 				6959EF7A16A58F2100BD07C9 /* FollowersViewController.m in Sources */,
+				695221CB16A94D98008F1CBF /* ClipView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +610,7 @@
 				INFOPLIST_FILE = "Image/Image-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -614,6 +623,7 @@
 				GCC_PREFIX_HEADER = "Image/Image-Prefix.pch";
 				INFOPLIST_FILE = "Image/Image-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

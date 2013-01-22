@@ -205,40 +205,65 @@
     return 1;
 }
 
+    
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Custom Table Cell";
     
+    static BOOL nibsRegistered = NO;
+    if (!nibsRegistered) {
+        UINib *nib = [UINib nibWithNibName:@"CustomTableCell" bundle:nil];
+        [tableView registerNib:nib forCellReuseIdentifier:CellIdentifier];
+        nibsRegistered = YES;
+    }
+    
     CustomCell *cell = (CustomCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
     if (cell == nil) {
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomTableCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
     }
     
+    
+    
+    cell.scrollView =  [[UIScrollView alloc] initWithFrame:CGRectMake(60, 0, 220, 200)];
+ //   [cell.scrollView setBackgroundColor:[UIColor grayColor]];
+    
     //在Image中加载照片
     UIImage *image1 = [UIImage imageWithData:[self.postImages objectAtIndex:indexPath.section]];
-    UIImageView* imageView1 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, cell.scrollView.frame.size.height)];
-    [imageView1 setContentMode:UIViewContentModeScaleToFill];
+    UIImageView* imageView1 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
     [imageView1 setImage:image1];
     [cell.scrollView addSubview:imageView1];
     
     UIImage *image2 = [UIImage imageWithData:[self.postImages1 objectAtIndex:indexPath.section]];
-    UIImageView* imageView2 = [[UIImageView alloc] initWithFrame:CGRectMake(320,0,320,cell.scrollView.bounds.size.height)];
-    [imageView2 setContentMode:UIViewContentModeScaleToFill];
+    UIImageView* imageView2 = [[UIImageView alloc] initWithFrame:CGRectMake(220,0,200,200)];
     [imageView2 setImage:image2];
     [cell.scrollView addSubview:imageView2];
     
     UIImage *image3 = [UIImage imageWithData:[self.postImages2 objectAtIndex:indexPath.section]];
-    UIImageView* imageView3 = [[UIImageView alloc] initWithFrame:CGRectMake(640,0,320,cell.scrollView.bounds.size.height)];
-    [imageView3 setContentMode:UIViewContentModeScaleToFill];
+    UIImageView* imageView3 = [[UIImageView alloc] initWithFrame:CGRectMake(440,0,200,200)];
     [imageView3 setImage:image3];
     [cell.scrollView addSubview:imageView3];
     //这个属性很重要，它可以决定是横向还是纵向滚动，一般来说也是其中的 View 的总宽度，和总的高度
-    cell.scrollView.contentSize = CGSizeMake(960, cell.scrollView.frame.size.height);
+    cell.scrollView.contentSize = CGSizeMake(960, 200);
     //用它指定 ScrollView 中内容的当前位置，即相对于 ScrollView 的左上顶点的偏移
     cell.scrollView.contentOffset = CGPointMake(0, 0);
+    //设置paging为No
     cell.scrollView.pagingEnabled = YES;
+    cell.scrollView.clipsToBounds = NO;
+
+
     
+    cell.clipView = [[ClipView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
+    cell.clipView.referanceScrollView = cell.scrollView;
+    
+    [cell.clipView addSubview:cell.scrollView];
+    
+  //  [cell.clipView setBackgroundColor:[UIColor redColor]];
+    cell.clipView.clipsToBounds = YES;
+    
+    [cell addSubview:cell.clipView];
+
     //被喜欢的次数
     NSString *likedString = [NSString stringWithFormat:@"%@", [self.likedCount objectAtIndex:indexPath.section]];
     cell.likedCount.text = likedString;    
@@ -344,14 +369,14 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //get the size of text
-    CGSize constraint = CGSizeMake(320,2000.0f);
-    CGSize size = [@"Text" sizeWithFont:[UIFont systemFontOfSize:12] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
-    CGFloat height = size.height;
+//    //get the size of text
+//    CGSize constraint = CGSizeMake(320,2000.0f);
+//    CGSize size = [@"Text" sizeWithFont:[UIFont systemFontOfSize:12] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
+//    CGFloat height = size.height;
+//    //调整高度
+//    NSArray *commentsOfPost = [self.commentsArray objectAtIndex:indexPath.section];
     
-    //调整高度
-    NSArray *commentsOfPost = [self.commentsArray objectAtIndex:indexPath.section];
-    return [CustomCell cellHeight] + 30 + height * (2 + 0.8) * commentsOfPost.count; //+1为行间距离
+    return [CustomCell cellHeight]; //+1为行间距离
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

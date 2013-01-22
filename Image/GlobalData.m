@@ -12,8 +12,8 @@
 
 +(NSString *)getHostUrl
 {
-    return @"http://172.16.110.69:3000/";
-    //return @"http://localhost:3000/";
+    //return @"http://172.16.110.69:3000/";
+    return @"http://localhost:3000/";
     //return @"http://secret-headland-7922.herokuapp.com/";
 
 }

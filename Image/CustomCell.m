@@ -7,14 +7,18 @@
 //
 
 #import "CustomCell.h"
-#define IMAGE_HEIGHT 320
+#define IMAGE_HEIGHT 230
 
 @interface CustomCell()
+
+@property CGPoint panStart;
+@property CGPoint startPoint;
+
+
 @end
 
 @implementation CustomCell
 
-@synthesize scrollView = _scrollView;
 @synthesize commentview = _commentview;
 
 
@@ -24,8 +28,15 @@
     if (self) {
         // Initialization code
         self.selectionStyle = UITableViewCellSelectionStyleNone;
+        
     }
     return self;
+}
+
+- (void) awakeFromNib{
+    
+    NSLog(@"%@",@"***01");
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
